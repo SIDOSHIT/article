@@ -1,0 +1,17 @@
+.menu_btn {
+    width: 75px;
+    height: 90px;
+    border-radius: 0px 0px 100% 0px;
+    border: 2px solid red;
+    background-color: red;
+    position: fixed;
+}
+
+.menu_btn span {
+    display: flex;
+    margin-left: 15%;
+    align-items: center;
+    color: white;
+}
+
+.menu_btn:active {}

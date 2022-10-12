@@ -1,0 +1,30 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    padding: 11% 15% 0px 15%;
+}
+
+.content h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: large;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-family: 'Roboto', sans-serif;
+    font-size: small;
+    margin-bottom: 20px;
+}
+
+.content h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: medium;
+    margin-bottom: 20px;
+}
+
+.content img {
+    border: 1px solid black;
+    margin-bottom: 20px;
+}
