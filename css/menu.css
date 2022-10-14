@@ -1,17 +1,78 @@
+.wrapper {
+  display: flex;
+}
 .menu_btn {
-    width: 75px;
-    height: 90px;
-    border-radius: 0px 0px 100% 0px;
-    border: 2px solid red;
-    background-color: red;
-    position: fixed;
+  width: 75px;
+  height: 90px;
+  position: fixed;
+  border: none;
 }
 
 .menu_btn span {
-    display: flex;
-    margin-left: 15%;
-    align-items: center;
-    color: white;
+  display: flex;
+  margin-left: 15%;
+  align-items: center;
+  color: black;
+  overflow: hidden;
+  box-shadow: none;
+  cursor: pointer;
 }
 
-.menu_btn:active {}
+.menu_btn_line::before {
+  width: 1000px;
+  height: 90px;
+  border-radius: 0px 100px 100% 0px;
+  border: 2px solid red;
+  background-color: black;
+  position: fixed;
+  border: none;
+}
+
+.sidepanel {
+  height: 100%; /* Укажите высоту */
+  width: 0; /* 0 ширина-измените это с помощью JavaScript */
+  position: fixed; /* Оставаться на месте */
+  z-index: 1; /* Оставайтесь на вершине */
+  top: 0;
+  left: 0;
+  background-color: black; /* Черный */
+  overflow-x: hidden; /* Отключить горизонтальную прокрутку */
+  padding-top: 500px; /* Поместите содержимое 60px сверху */
+  transition: 0.5s; /* 0.5 секунды эффект перехода для скольжения в боковой панели */
+}
+
+/* Боковая панель ссылок */
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+/* При наведении курсора мыши на навигационные ссылки измените их цвет */
+.sidepanel a:hover {
+  color: yellow;
+}
+
+/* Положение и стиль кнопки закрытия (верхний правый угол) */
+.sidepanel .closebtn {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Стиль кнопка, которая используется для открытия боковой панели */
+.material-symbols-outlined {
+  cursor: pointer;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.material-symbols-outlined:hover {
+}
